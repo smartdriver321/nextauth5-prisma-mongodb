@@ -1,11 +1,12 @@
 'use client'
 
 import AuthButton from './AuthButton'
+import { signInWithCreds } from '@/lib/actions/auths'
 
 export default function SignInForm() {
 	return (
 		<div>
-			<form action='' className='w-full flex flex-col gap-4'>
+			<form action={signInWithCreds} className='w-full flex flex-col gap-4'>
 				<div>
 					<label className='block text-sm font-medium text-gray-200'>
 						Email
