@@ -1,10 +1,12 @@
 'use client'
 
-export default function Logout() {
+import { useSignOut } from '@/lib/actions/auths'
+
+export default function SignOut() {
 	return (
-		<div onClick={() => {}}>
+		<div onClick={() => useSignOut()}>
 			<div className='bg-gray-600 text-white text-sm px-4 py-2 rounded-md cursor-pointer'>
-				logout
+				Sign Out
 			</div>
 		</div>
 	)

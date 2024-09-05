@@ -2,7 +2,7 @@
 
 import AuthButton from './AuthButton'
 
-export default function LoginForm() {
+export default function SignInForm() {
 	return (
 		<div>
 			<form action='' className='w-full flex flex-col gap-4'>

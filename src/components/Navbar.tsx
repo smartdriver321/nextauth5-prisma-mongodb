@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { auth } from '@/auth'
-import Logout from './Logout'
+import SignOut from './SignOut'
 
 export default async function Navbar() {
 	const session = await auth()
@@ -39,7 +39,7 @@ export default async function Navbar() {
 									/>
 								)}
 							</div>
-							<Logout />
+							<SignOut />
 						</>
 					)}
 				</div>
